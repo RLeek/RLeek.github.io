@@ -1,0 +1,26 @@
+name: Deploy to Github Pages
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+job:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: action/checkout@v3
+      - name: Setup python3
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - run: pip install -r requirements.txt
+      - run: python3 format.py
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./compiled
