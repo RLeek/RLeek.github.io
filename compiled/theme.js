@@ -56,7 +56,7 @@ function themeToggle(event) {
             storage.setItem("theme", "dark");
         }
         // Actually set to dark theme
-        document.getElementById("theme").setAttribute("src", "/moon.svg")
+        document.getElementById("theme").setAttribute("src", "moon.svg")
         document.documentElement.style.setProperty("--background-col", "#0C1317");
         document.documentElement.style.setProperty("--focusedText-col", "#CEB591");
         document.documentElement.style.setProperty("--focusedTint-col", "invert(82%) sepia(38%) saturate(248%) hue-rotate(353deg) brightness(83%) contrast(93%)")
@@ -69,7 +69,7 @@ function themeToggle(event) {
             storage.setItem("theme", "light");
         }
         // Actually set to light theme
-        document.getElementById("theme").setAttribute("src", "/sun.svg")
+        document.getElementById("theme").setAttribute("src", "sun.svg")
         document.documentElement.style.setProperty("--background-col", "#D4C5A8");
         document.documentElement.style.setProperty("--focusedText-col", "#6B1A40");
         document.documentElement.style.setProperty("--focusedTint-col", "invert(12%) sepia(61%) saturate(2130%) hue-rotate(304deg) brightness(89%) contrast(100%)")
