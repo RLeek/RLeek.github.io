@@ -1,16 +1,17 @@
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+@font-face { font-family: 'cascadia-code'; src: url('CascadiaCode.ttf'); } 
 
 :root {
     --background-col: black;
     --focusedText-col: black;
     --focusedTint-col: invert(82%) sepia(38%) saturate(248%) hue-rotate(353deg) brightness(83%) contrast(93%);
     --unfocusedText-col: black;
-    font-family: 'cascadia-code', sans-serif;        
+    font-family: 'cascadia-code';       
 }
 
 h1 {
     margin-bottom: 0px;
     letter-spacing: 0.06em;
+    font-weight: 600;
 }
 
 a {
@@ -28,6 +29,7 @@ a {
 }
 
 .date {
+    font-weight: 600;
     padding-left:13px;
     margin-top: 3px;
     padding-bottom: 1.75rem;
@@ -74,14 +76,16 @@ a {
 }
 
 .bigNavFont {
-    font-family: 'cascadia-code', sans-serif;
+    font-family: 'cascadia-code';
+    font-weight: 300;
     font-size: 1.125rem;
     line-height: 1.6rem;
     letter-spacing: 0.045em;
 }
 
 .navFont {
-    font-family: 'cascadia-code', sans-serif;
+    font-family: 'cascadia-code';
+    font-weight: 300;
     font-size: 1.125rem;
     line-height: 1.6rem;
     letter-spacing: 0.045em;
@@ -118,6 +122,8 @@ a {
 
 .archive {
     padding-bottom: 0rem;
+    font-weight: 600;
+    font-family: 'cascadia-code';
 }
 
 /* Style The Dropdown Button */
