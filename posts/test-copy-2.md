@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img src="../assets/Art/easy.jpg" class = "mainImage"/>
+  <img src= "/Art/easy.jpg" class = "mainImage"/>
 </p>
 
 Once you've built your game's set and festooned it with actors and props, all
