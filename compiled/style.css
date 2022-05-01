@@ -2,11 +2,17 @@
 @font-face { font-family: 'crimsonPro-regular'; src: url('CrimsonPro-Regular.ttf'); } 
 
 :root {
-    --background-col: black;
-    --focusedText-col: black;
+    --background-col: #0C1317;
+    --focusedText-col: #CEB591;
     --focusedTint-col: invert(82%) sepia(38%) saturate(248%) hue-rotate(353deg) brightness(83%) contrast(93%);
-    --unfocusedText-col: black;
+    --unfocusedText-col: #8A836B;
     font-family: 'cascadia-code';
+}
+:root.light {
+    --background-col: #D4C5A8;
+    --focusedText-col: #6B1A40;
+    --focusedTint-col: invert(12%) sepia(61%) saturate(2130%) hue-rotate(304deg) brightness(89%) contrast(100%);
+    --unfocusedText-col: #A74D68;
 }
 
 
