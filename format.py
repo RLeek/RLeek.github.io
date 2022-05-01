@@ -127,7 +127,7 @@ for i in listdir("./posts/"):
                 post[tag.lower()] = description.strip()
             line = f.readline()
         post["path"] = i[:-3]
-
+       
         post["nextPost"] = {"byDate": None, "byTopic": None}
         post["prevPost"] = {"byDate": None, "byTopic": None}
         
@@ -216,7 +216,7 @@ for post in posts:
 
 
         post["description"] = markdown.markdown(f.read())
-        format1 += (post['description'])
+        format1 +=     "<div class = \"bodyStyle\">" +(post['description']) + "</div>"
         output = output.replace("{{body}}", format1)
         
 
