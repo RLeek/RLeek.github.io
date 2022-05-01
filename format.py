@@ -332,7 +332,7 @@ output = initOutput("ricky", posts)
 output = output.replace("{{body}}", "")
 output = output.replace("{{footer.html}}", "")
 
-with open("./compiled/" + "home" + ".html", 'w' ) as f:
+with open("./compiled/" + "index" + ".html", 'w' ) as f:
     f.write(output)
 
 
