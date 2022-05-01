@@ -1,17 +1,33 @@
 @font-face { font-family: 'cascadia-code'; src: url('CascadiaCode.ttf'); } 
+@font-face { font-family: 'crimsonPro-regular'; src: url('CrimsonPro-Regular.ttf'); } 
 
 :root {
     --background-col: black;
     --focusedText-col: black;
     --focusedTint-col: invert(82%) sepia(38%) saturate(248%) hue-rotate(353deg) brightness(83%) contrast(93%);
     --unfocusedText-col: black;
-    font-family: 'cascadia-code';       
+    font-family: 'cascadia-code';
+}
+
+
+.bodyStyle {
+    font-family: 'crimsonPro-regular';
+    font-size:20px;
+    line-height: 1.7em;
+    letter-spacing: 0.01em;
 }
 
 h1 {
     margin-bottom: 0px;
     letter-spacing: 0.06em;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'cascadia-code';       
+}
+
+h2 {
+    font-family: 'cascadia-code';
+    font-weight: 500;
+    letter-spacing: 0.06em;
 }
 
 a {
@@ -29,14 +45,14 @@ a {
 }
 
 .date {
-    font-weight: 600;
+    font-family: 'cascadia-code';       
+    font-weight: 500;
     padding-left:13px;
     margin-top: 3px;
     padding-bottom: 1.75rem;
     font-size: 0.875rem; 
     line-height: 1.25rem; 
     letter-spacing: 0.045em;
-    letter-spacing: 0.06em;
 }
 
 .invisible {
@@ -149,7 +165,7 @@ a {
 
 @media (min-width: 768px) {
     .center {
-        width:44rem;
+        width:40rem;
     }
 
     .conditionalFlexBox {
@@ -167,7 +183,7 @@ a {
 
 @media (min-width: 1024px) { 
     .center {
-        width:52rem;
+        width:48rem;
     }
 
     .archive {
@@ -194,6 +210,8 @@ a {
 
 .navPadding {
     padding-top:1rem;
+    font-family: 'cascadia-code';
+    font-weight: 300;
 }
 
 
