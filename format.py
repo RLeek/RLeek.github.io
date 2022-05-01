@@ -341,7 +341,7 @@ with open("./compiled/" + "index" + ".html", 'w' ) as f:
 
 # Feed generator
 fg = FeedGenerator()
-fg.title("RLeek")
+fg.title("RSS Feed for rleek.github.io")
 fg.link(href="https://rleek.github.io/")
 fg.description("Hi, I'm Ricky and this is my personal blog")
 fg.author({'name':'Ricky Liu', 'email':'rky.w.liu@gmail.com'})
