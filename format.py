@@ -83,7 +83,6 @@ def initOutput(focused, posts):
     )
 
 
-
 # Should be fairly easy to implement now :)
 
 posts = []
@@ -166,8 +165,6 @@ for post in posts:
 
 # So now we have topics, and posts which should be everything required to generate every page and thingy 
 
-
-
 latestPost = posts[0]
 
 # Begin generating pages:
@@ -199,11 +196,9 @@ for post in posts:
             prevPostLink = post["prevPost"]["byDate"]+ ".html" if post["prevPost"]["byDate"] else "",
             prevPartLink =  post["prevPost"]["byTopic"]+ ".html" if post["prevPost"]["byTopic"] else ""
         ))
+        
     with open("./compiled/" + post['path'] + ".html", 'w' ) as f:
         f.write(output)
-
-
-
 
 
 
@@ -228,10 +223,6 @@ output = output(body = body)(footer="")
 
 with open("./compiled/" + "dateNavigation" + ".html", 'w' ) as f:
     f.write(output)
-
-
-
-
 
 
 
@@ -266,8 +257,6 @@ output = output(body = "")(footer="")
 
 with open("./compiled/" + "index" + ".html", 'w' ) as f:
     f.write(output)
-
-
 
 
 
