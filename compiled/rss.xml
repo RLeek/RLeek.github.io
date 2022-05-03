@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RSS Feed for rleek.github.io</title><link>https://rleek.github.io/</link><description>Hi, I'm Ricky and this is my personal blog</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en-au</language><lastBuildDate>Tue, 03 May 2022 12:23:18 +0000</lastBuildDate><pubDate>Tue, 03 May 2022 22:23:18 +0000</pubDate><item><title>Title8 the big test</title><link>https://rleek.github.io/test-copy-2.html</link><description>&lt;p align="center"&gt;
+  &lt;img src= "Art/easy.jpg" class = "mainImage"/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test-copy-2.html</guid><pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate></item><item><title>Title7</title><link>https://rleek.github.io/test-copy-3.html</link><description>&lt;h1&gt;Behavioral Patterns&lt;/h1&gt;
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test-copy-3.html</guid><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate></item><item><title>Title6</title><link>https://rleek.github.io/test-copy-4.html</link><description>&lt;h1&gt;Behavioral Patterns&lt;/h1&gt;
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test-copy-4.html</guid><pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate></item><item><title>Title5</title><link>https://rleek.github.io/test-copy-5.html</link><description>&lt;h1&gt;Behavioral Patterns&lt;/h1&gt;
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test-copy-5.html</guid><pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate></item><item><title>Title4</title><link>https://rleek.github.io/test-copy-6.html</link><description>&lt;h1&gt;Behavioral Patterns&lt;/h1&gt;
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test-copy-6.html</guid><pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate></item><item><title>Title2</title><link>https://rleek.github.io/test-copy.html</link><description>&lt;h1&gt;Behavioral Patterns&lt;/h1&gt;
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test-copy.html</guid><pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate></item><item><title>Title1</title><link>https://rleek.github.io/test.html</link><description>&lt;h1&gt;Behavioral Patterns&lt;/h1&gt;
+&lt;p&gt;Once you've built your game's set and festooned it with actors and props, all
+that remains is to start the scene. For this, you need behavior -- the
+screenplay that tells each entity in your game what to do.&lt;/p&gt;
+&lt;p&gt;Of course all code is "behavior", and all software is defining behavior, but
+what's different about games is often the &lt;em&gt;breadth&lt;/em&gt; of it that you have to
+implement. While your word processor may have a long list of features, it pales
+in comparison with the number of inhabitants, items, and quests in your average
+role-playing game.&lt;/p&gt;
+&lt;p&gt;The patterns in this chapter help to quickly define and refine a large quantity of
+maintainable behavior. Type Objects create
+categories of behavior without the rigidity of defining an actual class. A 
+Subclass Sandbox gives you a safe set of primitives
+you can use to define a variety of behaviors. The most advanced option is
+Bytecode, which moves behavior out of code entirely and into
+data.&lt;/p&gt;
+&lt;h2&gt;The Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bytecode&lt;/li&gt;
+&lt;li&gt;Subclass Sandbox&lt;/li&gt;
+&lt;li&gt;Type Object&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/test.html</guid><pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate></item></channel></rss>

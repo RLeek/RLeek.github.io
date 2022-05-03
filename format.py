@@ -6,6 +6,7 @@ from datetime import datetime, date
 from collections import defaultdict
 import pytz
 from feedgen.feed import FeedGenerator
+from framework import generateFuncTemplate
 """
 logic goes:
     # Go through each markdown file
@@ -72,39 +73,14 @@ def getTopics():
 
 
 def initOutput(focused, posts):
-
-    with open("./posts/"+post['path']+".md" , 'r') as f:
-
-        with open("./assets/template.html") as template:
-            output = template.read()
-        with open("./assets/header.html") as header:
-            output = output.replace("{{header.html}}", header.read())
-
-            #Ricky, posts, archive, gallery
-            if (focused == "ricky"):
-                output = output.replace("{{ricky}}", "focused")
-            else:
-                output = output.replace("{{ricky}}", "")
-
-            if (focused == "posts"):
-                output = output.replace("{{posts}}", "focused")
-            else:
-                output = output.replace("{{posts}}", "")
-
-            if (focused == "archive"):
-                output = output.replace("{{archive}}", "focused")
-            else:
-                output = output.replace("{{archive}}", "")
-
-
-            if (focused == "gallery"):
-                output = output.replace("{{gallery}}", "focused")
-            else:
-                output = output.replace("{{gallery}}", "")
-
-
-            output = output.replace("{{mostRecentPost}}", posts[0]["path"] + ".html")
-            return output
+    return generateFuncTemplate("./assets/template.html") (
+        generateFuncTemplate("./assets/header.html") (
+        ricky = "focused" if focused == "ricky" else "",
+        posts = "focused" if focused == "posts" else "",
+        archive = "focused" if focused == "archive" else "",
+        mostRecentPost = posts[0]["path"] + ".html"
+        )
+    )
 
 
 
@@ -194,19 +170,12 @@ for post in posts:
 
 latestPost = posts[0]
 
-
-
-
-
-
-
 # Begin generating pages:
 for post in posts:
 
     with open("./posts/"+post['path']+".md" , 'r') as f:
 
         output = initOutput("posts", posts)
-
         line = f.readline()
         while(line.startswith("^")):
             line = f.readline()
@@ -217,48 +186,21 @@ for post in posts:
 
         post["description"] = markdown.markdown(f.read())
         format1 +=     "<div class = \"bodyStyle\">" +(post['description']) + "</div>"
-        output = output.replace("{{body}}", format1)
-        
-
-        with open("./assets/footer.html") as footer:
-            output = output.replace("{{footer.html}}", footer.read())
-
-            if (post["nextPost"]["byDate"]):
-                output = output.replace("{{nextPost}}","")
-                output = output.replace("{{nextPostLink}}", post["nextPost"]["byDate"]+ ".html")
-            else:
-                output = output.replace("{{nextPost}}", "invisible")
-                output = output.replace("{{nextPostLink}}", "")
-
-            if (post["nextPost"]["byTopic"]):
-                output = output.replace("{{nextPart}}", "")
-                output = output.replace("{{nextPartLink}}", post["nextPost"]["byTopic"]+ ".html")
-            else:
-                output = output.replace("{{nextPart}}", "invisible")
-                output = output.replace("{{nextPartLink}}", "")
-
-            if (post["prevPost"]["byDate"]):
-                output = output.replace("{{prevPost}}", "")
-                output = output.replace("{{prevPostLink}}", post["prevPost"]["byDate"]+ ".html")
-            else:
-                output = output.replace("{{prevPost}}", "invisible")
-                output = output.replace("{{prevPostLink}}", "")
-
-            if (post["prevPost"]["byTopic"]):
-                output = output.replace("{{prevPart}}", "")
-                output = output.replace("{{prevPartLink}}", post["prevPost"]["byTopic"]+ ".html")
-            else:
-                output = output.replace("{{prevPart}}", "invisible")
-                output = output.replace("{{prevpartLink}}", "")
-        # Header, footer, body
-
-
-
+        output = output(body = format1)
+       
+        output = output(generateFuncTemplate("./assets/footer.html")(
+            nextPost = "" if post["nextPost"]["byDate"] else "invisible",
+            nextPart = "" if post["nextPost"]["byTopic"] else "invisible",
+            prevPost = "" if post["prevPost"]["byDate"] else "invisible",
+            prevPart = "" if post["prevPost"]["byTopic"] else "invisible"
+        )(
+            nextPostLink = post["nextPost"]["byDate"]+ ".html" if post["nextPost"]["byDate"] else "",
+            nextPartLink = post["nextPost"]["byTopic"]+ ".html" if post["nextPost"]["byTopic"] else "",
+            prevPostLink = post["prevPost"]["byDate"]+ ".html" if post["prevPost"]["byDate"] else "",
+            prevPartLink =  post["prevPost"]["byTopic"]+ ".html" if post["prevPost"]["byTopic"] else ""
+        ))
     with open("./compiled/" + post['path'] + ".html", 'w' ) as f:
         f.write(output)
-
-
-
 
 
 
@@ -270,19 +212,20 @@ for post in posts:
 output = initOutput("archive", posts)
 
 # Generate navigation by date:
-with open("./assets/navigationTemplate.html") as bodyTemplate:
-    body = bodyTemplate.read()
+
+body = generateFuncTemplate("./assets/navigationTemplate.html")(
+        navigation="By date"
+    )(
+        navigationLink = "<a href=\"topicNavigation.html\">By topic</a>"
+    )
 
 for year in yearPostHolder.keys():
-
     body += "<h2 >" + str(year) + "</h2>\n"
     for post in yearPostHolder[year]:
         body += "<div class = \"rowFlexBox archiveNav\" ><div class = \"navDate navPadding\">"+ post["date"].strftime("%B %d")  +"</div><a href = "+ post["path"] + ".html class = \"navPadding\">"+ post["title"]+"</a></div>\n"
-    body = body.replace("{{navigation}}", "By date")
-    body = body.replace("{{navigationLink}}", "<a href=\"topicNavigation.html\">By topic</a>")
+   
+output = output(body = body)(footer="")
 
-output = output.replace("{{body}}", body)
-output = output.replace("{{footer.html}}", "")
 with open("./compiled/" + "dateNavigation" + ".html", 'w' ) as f:
     f.write(output)
 
@@ -296,23 +239,19 @@ with open("./compiled/" + "dateNavigation" + ".html", 'w' ) as f:
 output = initOutput("archive", posts)
 
 # Generate navigation by topic:
-with open("./assets/navigationTemplate.html") as bodyTemplate:
-    body = bodyTemplate.read()
-    
-for topic in topics:
+body = generateFuncTemplate("./assets/navigationTemplate.html")(
+        navigation="By topic"
+    )(
+        navigationLink = "<a href=\"dateNavigation.html\">By date</a>"
+    )    
 
+for topic in topics:
     body += "<h2 style=\"margin-bottom:0;\">" + topic["name"] + "</h2>\n"
     body += "<p class = \"description\">" + topic["Description"] + "</p>\n"
     for post in topic["posts"]:
         body += "<div class = \"rowFlexBox archiveNav\" ><div class = \"navDate navPadding\">"+ post["date"].strftime("%B %d, %Y")  +"</div><a href = "+ post["path"] + ".html class = \"navPadding\">"+ post["title"]+"</a></div>\n"
 
-
-
-    body = body.replace("{{navigation}}", "By topic")
-    body = body.replace("{{navigationLink}}", "<a href=\"dateNavigation.html\">By date</a>")
-
-output = output.replace("{{body}}", body)
-output = output.replace("{{footer.html}}", "")
+output = output(body = body)(footer="")
 
 with open("./compiled/" + "topicNavigation" + ".html", 'w' ) as f:
     f.write(output)
@@ -321,16 +260,9 @@ with open("./compiled/" + "topicNavigation" + ".html", 'w' ) as f:
 
 
 
-
-
-
-
-
-
 output = initOutput("ricky", posts)
 
-output = output.replace("{{body}}", "")
-output = output.replace("{{footer.html}}", "")
+output = output(body = "")(footer="")
 
 with open("./compiled/" + "index" + ".html", 'w' ) as f:
     f.write(output)
