@@ -106,6 +106,8 @@ for i in listdir("./posts/"):
         post["nextPost"] = {"byDate": None, "byTopic": None}
         post["prevPost"] = {"byDate": None, "byTopic": None}
         
+        if ("unpublished" in post.keys()):
+            continue
 
         # Throw error here if topic is undefined or not within specified enum
         if ("title" not in post):
