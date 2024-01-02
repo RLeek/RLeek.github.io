@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RSS Feed for rleek.github.io</title><link>https://rleek.github.io/</link><description>Hi, I'm Ricky and this is my personal blog</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en-au</language><lastBuildDate>Tue, 02 Jan 2024 11:49:00 +0000</lastBuildDate><pubDate>Tue, 02 Jan 2024 11:49:00 +0000</pubDate><item><title>Hegemone - Artwork</title><link>https://rleek.github.io/2024-1-2.html</link><description>&lt;p align="center"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RSS Feed for rleek.github.io</title><link>https://rleek.github.io/</link><description>Hi, I'm Ricky and this is my personal blog</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en-au</language><lastBuildDate>Tue, 02 Jan 2024 11:52:54 +0000</lastBuildDate><pubDate>Tue, 02 Jan 2024 11:52:54 +0000</pubDate><item><title>Hegemone - Artwork</title><link>https://rleek.github.io/2024-1-2.html</link><description>&lt;p align="center"&gt;
   &lt;img src= "Art/Hegemone.jpg" class = "mainImage"/&gt;
 &lt;/p&gt;
 
@@ -7,12 +7,14 @@
 &lt;p&gt;Lets get into the swing of things.&lt;/p&gt;
 &lt;p&gt;This is fanart of Hegemone from FF14. I dug her design and music, so felt like drawing her. The contrast between her basic bowl cut and the monstrous appendages really worked for me. &lt;/p&gt;
 &lt;h3&gt;Critique&lt;/h3&gt;
-&lt;p&gt;There are some pretty clear mistakes that I should avoid in the future.
-* The character is below the horizon line giving the effect that the camera is looking down from above. This foreshortens the characters body, making it more difficult to draw and distorted. Try having the horizon line in the centre of the artwork
-* The character's face is wrong. Namely, the eyes and mouth are distorted in perspective
-* It took a long time to paint the robes despite being following fairly simple rules. Would like to be more familiar with painting clothes and faster ways of doing so
-* The artwork is just bland. It lacks a strong sense of tone/action/story. The character needs a better gesture with a clear sense of motion, and have an actual facial expression. The lighting is also incredibly basic.
-* Avoid choosing A4 canvas size in Clip Studio Paint. It's too low resolution to have the correct precision when drawing.&lt;/p&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/2024-1-2.html</guid><pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate></item><item><title>Title8 the big test</title><link>https://rleek.github.io/test-copy-2.html</link><description>&lt;p align="center"&gt;
+&lt;p&gt;There are some pretty clear mistakes that I should avoid in the future.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The character is below the horizon line giving the effect that the camera is looking down from above. This foreshortens the characters body, making it more difficult to draw and distorted. Try having the horizon line in the centre of the artwork&lt;/li&gt;
+&lt;li&gt;The character's face is wrong. Namely, the eyes and mouth are distorted in perspective&lt;/li&gt;
+&lt;li&gt;It took a long time to paint the robes despite being following fairly simple rules. Would like to be more familiar with painting clothes and faster ways of doing so&lt;/li&gt;
+&lt;li&gt;The artwork is just bland. It lacks a strong sense of tone/action/story. The character needs a better gesture with a clear sense of motion, and have an actual facial expression. The lighting is also incredibly basic.&lt;/li&gt;
+&lt;li&gt;Avoid choosing A4 canvas size in Clip Studio Paint. It's too low resolution to have the correct precision when drawing.&lt;/li&gt;
+&lt;/ul&gt;</description><author>rky.w.liu@gmail.com (Ricky Liu)</author><guid isPermaLink="false">https://rleek.github.io/2024-1-2.html</guid><pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate></item><item><title>Title8 the big test</title><link>https://rleek.github.io/test-copy-2.html</link><description>&lt;p align="center"&gt;
   &lt;img src= "Art/easy.jpg" class = "mainImage"/&gt;
 &lt;/p&gt;
 
